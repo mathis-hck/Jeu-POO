@@ -67,8 +67,8 @@ build CMakeFiles/untitled.dir/Creature.cpp.obj: CXX_COMPILER__untitled_unscanned
   OBJECT_DIR = CMakeFiles\untitled.dir
   OBJECT_FILE_DIR = CMakeFiles\untitled.dir
 
-build CMakeFiles/untitled.dir/Entité.cpp.obj: CXX_COMPILER__untitled_unscanned_Debug C$:/Users/Mathis/CLionProjects/untitled/Entité.cpp || cmake_object_order_depends_target_untitled
-  DEP_FILE = CMakeFiles\untitled.dir\Entité.cpp.obj.d
+build CMakeFiles/untitled.dir/Entite.cpp.obj: CXX_COMPILER__untitled_unscanned_Debug C$:/Users/Mathis/CLionProjects/untitled/Entite.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles\untitled.dir\Entite.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\untitled.dir
   OBJECT_FILE_DIR = CMakeFiles\untitled.dir
@@ -81,7 +81,7 @@ build CMakeFiles/untitled.dir/Entité.cpp.obj: CXX_COMPILER__untitled_unscanned_D
 #############################################
 # Link the executable untitled.exe
 
-build untitled.exe: CXX_EXECUTABLE_LINKER__untitled_Debug CMakeFiles/untitled.dir/main.cpp.obj CMakeFiles/untitled.dir/Heros.cpp.obj CMakeFiles/untitled.dir/Creature.cpp.obj CMakeFiles/untitled.dir/Entité.cpp.obj
+build untitled.exe: CXX_EXECUTABLE_LINKER__untitled_Debug CMakeFiles/untitled.dir/main.cpp.obj CMakeFiles/untitled.dir/Heros.cpp.obj CMakeFiles/untitled.dir/Creature.cpp.obj CMakeFiles/untitled.dir/Entite.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\untitled.dir

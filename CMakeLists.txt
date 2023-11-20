@@ -8,6 +8,6 @@ add_executable(untitled main.cpp
         Heros.h
         Creature.cpp
         Creature.h
-        Entité.cpp
-        Entité.h
+        Entite.cpp
+        Entite.h
 )

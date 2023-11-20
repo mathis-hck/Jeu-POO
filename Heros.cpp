@@ -2,33 +2,35 @@
 #include "Heros.h"
 #include "Creature.h"
 #include <random>
+#include <string.h>
+#include "Entite.h"
 
 using namespace std;
 
-Heros::Heros(string nom, int pv, int pas1, int pas2, int pas3, int nbpot, int pvmax) {
-    this->nom = nom;
-
-    this->pv = pv;
-
+Heros::Heros(string nom, int pv, int pas1, int pas2, int pas3, int nbpot, int pvmax)
+    : Entite(nom,pv)
+{
     this->pas1 = pas1;
-
     this->pas2 = pas2;
-
     this->pas3 = pas3;
-
     this->nbpot = nbpot;
-
     this->pvmax = pvmax;
-
 }
 
 void Heros::affiche()
 {
-    cout << "Je suis le hero :" << endl;
-    cout << "Mon nom est " << nom << endl;
-    cout << "J'ai " << pv << " point de vie" << endl;
-    cout << "J'ai " << pas1 << " point d'attaque" << endl;
-    cout << "//////////////////////////////" << endl;
+    cout << "Je suis le hero" << endl;
+    Entite::affiche();
+}
+
+void Heros::subitDegat(int degat)
+{
+    pv -= degat;
+}
+
+int Heros::getpv()
+{
+    Entite::getpv();
 }
 
 void Heros::Heal()
@@ -76,27 +78,12 @@ void Heros::attaque3(Creature &c)
     }
 }
 
-void Heros::subitDegat(int degat)
-{
-    pv -= degat;
-}
-
 int Heros::getpa()
 {
     return this->pas1;
 }
 
-int Heros::getpv()
-{
-    return this->pv;
-}
-
 int Heros::getnbpot()
 {
     return this->nbpot;
-}
-
-int Heros::setpv(int p)
-{
-    pv = p;
 }

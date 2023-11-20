@@ -7,20 +7,23 @@ int main()
     int spell;
     char answer;
     Heros her1("toto", 50, 5, 20, 30, 3,50);
-    Creature crea1(50, 15, 10);
+    Creature crea1("golem",50, 15, 10);
     her1.affiche();
     crea1.affiche();
     while(her1.getpv()>=0 && crea1.getpv()>=0)
     {
         cout << "Quelle attaque voulez vous utiliser ?";
         cin >> spell;
-        if (spell==1){
+        if (spell==1)
+        {
             her1.attaque1(crea1);
         }
-        else if (spell==2){
+        else if (spell==2)
+        {
             her1.attaque2(crea1);
         }
-        else if (spell==3){
+        else if (spell==3)
+        {
             her1.attaque3(crea1);
         }
         crea1.attaque(her1);

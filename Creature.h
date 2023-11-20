@@ -1,26 +1,23 @@
 #pragma once
+#include "Entite.h"
 
 using namespace std;
 
 class Heros;
 
-class Creature
+class Creature : public Entite
 {
 public:
-
-    void affiche();
-
-    void subitDegat(int degat);
-
+    void affiche() override;
+    void subitDegat(int degat) override;
+    int getpv() override;
+    int getpa();
     void attaque(Heros &h);
 
-    int getpa();
-
-    int getpv();
-
-    Creature(int pv, int pa, int niveau);
+    Creature(string nom, int pv, int pa, int niveau);
 
 private:
+    string nom;
     int pv;
     int pa;
     int niveau;

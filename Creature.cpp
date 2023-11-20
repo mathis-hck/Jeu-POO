@@ -2,30 +2,33 @@
 #include "Heros.h"
 #include <iostream>
 #include <random>
+#include <string.h>
 
 using namespace std;
 
-Creature::Creature(int pv, int pa, int niveau) {
-    this->pv = pv;
-
+Creature::Creature(string nom, int pv, int pa, int niveau)
+    : Entite(nom,pv)
+{
+    Entite(nom,pv);
     this->pa = pa;
-
     this->niveau = niveau;
-
 }
 
 void Creature::affiche()
 {
-    cout << "Arghghgh je suis le monstre :" << endl;
-    cout << "Je suis niveau " << niveau << endl;
-    cout << "J'ai " << pv << " point de vie" << endl;
-    cout << "J'ai " << pa << " point d'attaque" << endl;
-    cout << "//////////////////////////////" << endl;
+    cout << "Je suis le monstre" << endl;
+    Entite::affiche();
 }
 
 void Creature::subitDegat(int degat)
 {
     pv -= degat;
+}
+
+int Creature::getpv()
+{
+    Entite::getpv();
+
 }
 
 void Creature::attaque(Heros &h)
@@ -37,9 +40,4 @@ void Creature::attaque(Heros &h)
 int Creature::getpa()
 {
     return this->pa;
-}
-
-int Creature::getpv()
-{
-    return this->pv;
 }
