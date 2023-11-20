@@ -1,0 +1,6 @@
+# ninja log v5
+3	451	7218242385875286	CMakeFiles/untitled.dir/main.cpp.obj	4a1517e3cef54f6e
+2	614	7221742804536651	build.ninja	c0b0a4ffd82eedd0
+7	972	7221695807008147	CMakeFiles/untitled.dir/Heros.cpp.obj	95bae9c11538b840
+4	622	7217639651372622	CMakeFiles/untitled.dir/Creature.cpp.obj	1b7c37ba41f46222
+973	1295	7221695810258248	untitled.exe	912ee754deaa5b0e
